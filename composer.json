@@ -1,0 +1,32 @@
+{
+    "name": "fomvasss/laravel-last-visit",
+    "description": "Check last visit user",
+    "type": "composer-package",
+    "keywords": [
+        "fomvasss", "laravel", "visit"
+    ],
+    "authors": [
+        {
+            "name": "Vasyl Fomin",
+            "email": "fomvasss@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "license": "MIT",
+    "require": {
+        "php" : ">=7.0.0",
+        "illuminate/support": "5.6.*|5.7.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Fomvasss\\LastVisit\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Fomvasss\\LastVisit\\ServiceProvider"
+            ]
+        }
+    }
+}
